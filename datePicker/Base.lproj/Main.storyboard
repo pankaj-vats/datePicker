@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N2b-DI-0EZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,143 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="datePicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM/DD/YYYY" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Le9-gt-ZaI">
+                                <rect key="frame" x="87.5" y="308.5" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gnU-g7-CXn"/>
+                                    <constraint firstAttribute="width" constant="200" id="oCH-bN-naw"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Le9-gt-ZaI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e6e-mu-Tz8"/>
+                            <constraint firstItem="Le9-gt-ZaI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r1j-XH-axU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dateField" destination="Le9-gt-ZaI" id="qE4-Fp-SAd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="111" y="59"/>
+        </scene>
+        <!--VC2-->
+        <scene sceneID="5Ja-6z-PxE">
+            <objects>
+                <viewController id="lYE-hI-lOR" customClass="VC2" customModule="datePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o8j-hz-smg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM/DD/YYYY" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PZw-Hp-rkt">
+                                <rect key="frame" x="87.5" y="308.5" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2hi-tz-DnV"/>
+                                    <constraint firstAttribute="width" constant="200" id="77w-qy-d4I"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IQ8-yb-ieH">
+                                <rect key="frame" x="85" y="428.5" width="205" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="yrh-l8-NmC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7391572019" green="0.92225955309999996" blue="0.1041480862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="whM-oO-zDp" firstAttribute="trailing" secondItem="IQ8-yb-ieH" secondAttribute="trailing" constant="85" id="7YW-XO-IGF"/>
+                            <constraint firstItem="PZw-Hp-rkt" firstAttribute="centerX" secondItem="o8j-hz-smg" secondAttribute="centerX" id="Bkc-19-zLl"/>
+                            <constraint firstItem="IQ8-yb-ieH" firstAttribute="leading" secondItem="whM-oO-zDp" secondAttribute="leading" constant="85" id="Pd4-fn-Vzn"/>
+                            <constraint firstItem="PZw-Hp-rkt" firstAttribute="centerY" secondItem="o8j-hz-smg" secondAttribute="centerY" id="Wzd-dM-5RH"/>
+                            <constraint firstItem="IQ8-yb-ieH" firstAttribute="top" secondItem="PZw-Hp-rkt" secondAttribute="bottom" constant="70" id="sAi-ME-tBN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="whM-oO-zDp"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateField" destination="PZw-Hp-rkt" id="CXP-ml-eq4"/>
+                        <outlet property="dateField2" destination="IQ8-yb-ieH" id="Dfa-zd-2S9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c1B-Zr-Fh3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="59"/>
+        </scene>
+        <!--VC3-->
+        <scene sceneID="xUM-jf-Rzc">
+            <objects>
+                <viewController id="N2b-DI-0EZ" customClass="VC3" customModule="datePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aGp-hY-xr7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM/DD/YYYY" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAI-gk-NMv">
+                                <rect key="frame" x="87.5" y="308.5" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="78P-Pn-fxj"/>
+                                    <constraint firstAttribute="width" constant="200" id="EPV-xl-YbA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cHz-HZ-WWj">
+                                <rect key="frame" x="85" y="428.5" width="205" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="43F-DU-bq5"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nj1-op-vw5">
+                                <rect key="frame" x="85" y="528.5" width="205" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4pb-g5-LrN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.54245987640000004" blue="0.360361133" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AqR-Qj-bAb" firstAttribute="trailing" secondItem="cHz-HZ-WWj" secondAttribute="trailing" constant="85" id="AeT-Pj-Rep"/>
+                            <constraint firstItem="nj1-op-vw5" firstAttribute="top" secondItem="cHz-HZ-WWj" secondAttribute="bottom" constant="50" id="E9k-MX-a7l"/>
+                            <constraint firstItem="iAI-gk-NMv" firstAttribute="centerX" secondItem="aGp-hY-xr7" secondAttribute="centerX" id="KcB-66-6nU"/>
+                            <constraint firstItem="cHz-HZ-WWj" firstAttribute="top" secondItem="iAI-gk-NMv" secondAttribute="bottom" constant="70" id="apb-QO-bxv"/>
+                            <constraint firstItem="AqR-Qj-bAb" firstAttribute="trailing" secondItem="nj1-op-vw5" secondAttribute="trailing" constant="85" id="beG-nm-ysl"/>
+                            <constraint firstItem="cHz-HZ-WWj" firstAttribute="leading" secondItem="AqR-Qj-bAb" secondAttribute="leading" constant="85" id="s2X-yR-x49"/>
+                            <constraint firstItem="nj1-op-vw5" firstAttribute="leading" secondItem="AqR-Qj-bAb" secondAttribute="leading" constant="85" id="su3-ac-Upt"/>
+                            <constraint firstItem="iAI-gk-NMv" firstAttribute="centerY" secondItem="aGp-hY-xr7" secondAttribute="centerY" id="uC8-94-wXT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AqR-Qj-bAb"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateField" destination="iAI-gk-NMv" id="2Au-xH-adR"/>
+                        <outlet property="dateField2" destination="cHz-HZ-WWj" id="cEV-uM-whd"/>
+                        <outlet property="daysLbl" destination="nj1-op-vw5" id="Ga6-ao-U04"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="drA-Ge-Vkh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711" y="59"/>
         </scene>
     </scenes>
 </document>

@@ -14,6 +14,8 @@
 		38C8239820F5D7A2005F1FA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38C8239620F5D7A2005F1FA9 /* LaunchScreen.storyboard */; };
 		38C823A320F5D7A2005F1FA9 /* datePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C823A220F5D7A2005F1FA9 /* datePickerTests.swift */; };
 		38C823AE20F5D7A2005F1FA9 /* datePickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C823AD20F5D7A2005F1FA9 /* datePickerUITests.swift */; };
+		38C823C020F5FD5E005F1FA9 /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C823BF20F5FD5E005F1FA9 /* VC2.swift */; };
+		38C823C220F61F73005F1FA9 /* VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C823C120F61F73005F1FA9 /* VC3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		38C823A920F5D7A2005F1FA9 /* datePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = datePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C823AD20F5D7A2005F1FA9 /* datePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datePickerUITests.swift; sourceTree = "<group>"; };
 		38C823AF20F5D7A3005F1FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38C823BF20F5FD5E005F1FA9 /* VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
+		38C823C120F61F73005F1FA9 /* VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,11 @@
 		38C8238C20F5D7A1005F1FA9 /* datePicker */ = {
 			isa = PBXGroup;
 			children = (
+				38C8239120F5D7A1005F1FA9 /* Main.storyboard */,
 				38C8238D20F5D7A1005F1FA9 /* AppDelegate.swift */,
 				38C8238F20F5D7A1005F1FA9 /* ViewController.swift */,
-				38C8239120F5D7A1005F1FA9 /* Main.storyboard */,
+				38C823BF20F5FD5E005F1FA9 /* VC2.swift */,
+				38C823C120F61F73005F1FA9 /* VC3.swift */,
 				38C8239420F5D7A2005F1FA9 /* Assets.xcassets */,
 				38C8239620F5D7A2005F1FA9 /* LaunchScreen.storyboard */,
 				38C8239920F5D7A2005F1FA9 /* Info.plist */,
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38C823C220F61F73005F1FA9 /* VC3.swift in Sources */,
+				38C823C020F5FD5E005F1FA9 /* VC2.swift in Sources */,
 				38C8239020F5D7A1005F1FA9 /* ViewController.swift in Sources */,
 				38C8238E20F5D7A1005F1FA9 /* AppDelegate.swift in Sources */,
 			);
@@ -431,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZP83ZH2VF;
 				INFOPLIST_FILE = datePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZP83ZH2VF;
 				INFOPLIST_FILE = datePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
